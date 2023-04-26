@@ -5,6 +5,14 @@
 // 7 -> нет
 
 
+// Console.WriteLine("Введите число :");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num % 2 == 0)
+// Console.WriteLine($"{num} является чётным");
+// else
+// Console.WriteLine($"{num} не является чётным");
+
 Console.WriteLine("Введите число :");
 int num = Convert.ToInt32(Console.ReadLine());
-num % 2 == 0? Console.WriteLine($"{num} является чётным") : Console.WriteLine($"{num} не является чётным");
+string result = (num%2==0)? "четное":"нечетное";
+Console.WriteLine($"{num} {result}");
