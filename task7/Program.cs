@@ -4,3 +4,10 @@
 // 9146548 -> 1
 // 3 -> нет
 
+
+
+int n = Convert.ToInt32(Console.ReadLine());
+while ((n / 100) > 0){
+n = n / 10;}
+if (n < 10) Console.WriteLine("Такой цифры нет");
+else Console.WriteLine(n % 10);
