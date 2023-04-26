@@ -10,6 +10,6 @@ Console.WriteLine("Введите второе число");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число");
 int c = Convert.ToInt32(Console.ReadLine());
-int d = a > b ? a : b; // Тернарный оператор  https://devpractice.ru/c-sharp-lesson-6-if-and-for/
-int max = c > d ? c : d;  // Синтаксис оператора : "condition ? if_true : if_else"
+int max = a>b? a>c? a:c :b>c? b:c; // Тернарный оператор  https://devpractice.ru/c-sharp-lesson-6-if-and-for/
+  // Синтаксис оператора : "condition ? if_true : if_else"
 Console.WriteLine($"Наибольшее число: {max}");
